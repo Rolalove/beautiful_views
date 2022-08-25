@@ -13,7 +13,6 @@ body {
 .card_container {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       width: 100%;
       justify-content: center;
       margin-top: 30px; 
@@ -79,56 +78,35 @@ button:hover{
 }
 
 /**/
-@media screen and (max-width:1343px){
-      .card_container {
-            flex-direction: row;
-            flex-wrap: wrap;
-      }
-      .card {
-            width: 28%;
-      }
-                  .card p {
-            margin-left: 25px;
-            margin-top: 10px;
-            font-size: 1.5rem;
-      }
-}
-
-@media screen and (max-width:1130px){
-      .card_container {
-            flex-direction: row;
-            flex-wrap: wrap;
-            }
-      .card{
-            width: 40%;
-            }
-                  .card p {
-            margin-left: 25px;
-            margin-top: 10px;
-            font-size: 1.2rem;
-      }
-}
-@media screen and (max-width:1084px){
+@media screen and (max-width:1024px){
       .card_container{
             flex-direction: row;
-            flex-wrap: wrap;
       }
       .card{
-            width: 37%;
+            width: 30%;
       }
             .card p {
             margin-left: 25px;
             margin-top: 10px;
-            font-size: 1.2rem;
+            font-size: 1.7rem;
       }
       .card h1 {
             margin-left: 25px;
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-top: 20px;
       }
+} 
+@media screen and(max-width:800px) {
+      .card_container{
+            flex-direction: column;
+      }
+      .card{
+            width: 80%;
+      }
+      
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
       .card_container {
             flex-direction: column;
             }
